@@ -1,0 +1,72 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #3498db, #2ecc71);
+    animation: gradientAnimation 10s infinite alternate-reverse;
+  }
+  
+  .welcome-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #welcomeText {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  .container {
+    text-align: center;
+    color: #fff;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(to bottom right, #3498db, #2ecc71);
+    }
+    50% {
+      background: linear-gradient(to bottom right, #2ecc71, #3498db);
+    }
+    100% {
+      background: linear-gradient(to bottom right, #3498db, #2ecc71);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
