@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Elective Selection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Open Elective Selection</h2>
+    <form id="electiveForm">
+
+      <!-- Elective 1 -->
+      <div class="elective-container" onclick="toggleElective('Elective1')">
+        <label for="electiveSelect1">Select an Open Elective:</label>
+        <select id="electiveSelect1">
+          <option value="Subject1">Subject 1</option>
+          <option value="Subject2">Subject 2</option>
+          <option value="Subject3">Subject 3</option>
+          <!-- Add more subjects for Elective 1 as needed -->
+        </select>
+      </div>
+
+      <!-- Elective 2 -->
+      <div class="elective-container" onclick="toggleElective('Elective2')">
+        <label for="electiveSelect2">Select an Open Elective:</label>
+        <select id="electiveSelect2">
+          <option value="Subject4">Subject 4</option>
+          <option value="Subject5">Subject 5</option>
+          <option value="Subject6">Subject 6</option>
+          <!-- Add more subjects for Elective 2 as needed -->
+        </select>
+      </div>
+
+      <!-- Add more elective containers for Electives 3 to 10 as needed -->
+
+      <label for="nameInput">Your Name:</label>
+      <input type="text" id="nameInput" required>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
