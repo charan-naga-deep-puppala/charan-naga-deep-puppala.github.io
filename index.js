@@ -2,7 +2,7 @@ const msalConfig = {
     auth: {
       clientId: 'c7f9e5a9-8f2e-41e2-83cf-5f7d1281558c', // Replace with your application's client ID
       authority: 'https://login.microsoftonline.com/df7217c9-cec8-4cc2-8e6a-a1cfbfadb321', // Replace with your Azure AD tenant ID
-      redirectUri: 'https://youtube.com/', // Replace with your redirect URI
+      redirectUri: 'https://charan-naga-deep-puppala.github.io/form.html?', // Replace with your redirect URI
     },
   };
   
