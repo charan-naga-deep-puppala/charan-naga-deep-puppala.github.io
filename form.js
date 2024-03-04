@@ -2,8 +2,6 @@ function updateOptions(selectElement) {
     // Get the selected value
     var selectedValue = selectElement.value;
 
-    console.log("Selected Value:", selectedValue);
-
     // Hide the current label and select with slide-down effect
     selectElement.classList.add('hidden');
     selectElement.previousElementSibling.classList.add('hidden');
@@ -13,7 +11,6 @@ function updateOptions(selectElement) {
 
     // Show the next label and select with slide-down effect
     if (nextSelect) {
-        console.log("Next Select Element Found");
         nextSelect.classList.remove('hidden');
         nextSelect.previousElementSibling.classList.remove('hidden');
 
