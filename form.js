@@ -11,8 +11,8 @@ function updateOptions(selectElement) {
 
     // Show the next label and select with slide-down effect
     if (nextSelect) {
-        nextSelect.classList.add('visible');
-        nextSelect.previousElementSibling.classList.add('visible');
+        nextSelect.classList.remove('hidden');  // Changed from 'visible' to 'remove'
+        nextSelect.previousElementSibling.classList.remove('hidden');
 
         // Populate options based on selection from option 1
         populateOptions(nextSelect, selectedValue);
