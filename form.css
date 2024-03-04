@@ -6,7 +6,6 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('placeholder.jpg') center/cover no-repeat fixed; /* Replace 'placeholder.jpg' with your image file */
 }
 
 .container {
