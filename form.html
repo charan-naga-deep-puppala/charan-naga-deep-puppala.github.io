@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Elective Selection</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Elective Selection</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Open Elective Selection</h2>
+
+    <h1>Open Elective Selection</h1>
+
     <form id="electiveForm">
-
-      <!-- Elective 1 -->
-      <div class="elective-container" onclick="toggleElective('Elective1')">
-        <label for="electiveSelect1">Select an Open Elective:</label>
-        <select id="electiveSelect1">
-          <option value="Subject1">Subject 1</option>
-          <option value="Subject2">Subject 2</option>
-          <option value="Subject3">Subject 3</option>
-          <!-- Add more subjects for Elective 1 as needed -->
+        <!-- Option 1 -->
+        <label for="option1">Option 1:</label>
+        <select id="option1" onchange="updateOptions(this)">
+            <option value="">Select Subject</option>
+            <option value="subject1">Subject 1</option>
+            <option value="subject2">Subject 2</option>
+            <option value="subject3">Subject 3</option>
+            <option value="subject4">Subject 4</option>
+            <option value="subject5">Subject 5</option>
+            <option value="subject6">Subject 6</option>
+            <option value="subject7">Subject 7</option>
+            <option value="subject8">Subject 8</option>
+            <option value="subject9">Subject 9</option>
+            <option value="subject10">Subject 10</option>
         </select>
-      </div>
 
-      <!-- Elective 2 -->
-      <div class="elective-container" onclick="toggleElective('Elective2')">
-        <label for="electiveSelect2">Select an Open Elective:</label>
-        <select id="electiveSelect2">
-          <option value="Subject4">Subject 4</option>
-          <option value="Subject5">Subject 5</option>
-          <option value="Subject6">Subject 6</option>
-          <!-- Add more subjects for Elective 2 as needed -->
+        <!-- Option 2 -->
+        <label for="option2" class="hidden">Option 2:</label>
+        <select id="option2" onchange="updateOptions(this)" class="hidden">
+            <option value="">Select Subject</option>
+            <!-- Options will be dynamically added here based on selection from option 1 -->
         </select>
-      </div>
 
-      <!-- Add more elective containers for Electives 3 to 10 as needed -->
+        <!-- Add similar blocks for options 3 to 10 -->
 
-      <label for="nameInput">Your Name:</label>
-      <input type="text" id="nameInput" required>
-
-      <button type="button" onclick="submitForm()">Submit</button>
+        <input type="submit" value="Submit">
     </form>
-  </div>
 
-  <script src="index.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
