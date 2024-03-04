@@ -28,4 +28,15 @@ function updateOptions(selectElement) {
     });
 }
 
-function populateOptions(selectElement, selectedValue)
+function populateOptions(selectElement, selectedValue) {
+    // Remove existing options
+    selectElement.innerHTML = '<option value="">Select Subject</option>';
+
+    // Add new options based on selectedValue
+    for (var i = 1; i <= 10; i++) {
+        var subject = 'subject' + i;
+        if (subject !== selectedValue) {
+            selectElement.innerHTML += '<option value="' + subject + '">' + 'Subject ' + i + '</option>';
+        }
+    }
+}
