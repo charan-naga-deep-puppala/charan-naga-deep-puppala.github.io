@@ -1,6 +1,17 @@
 function updateOptions(selectElement) {
-    // Get the selected value
     var selectedValue = selectElement.value;
+
+    // Disable the selected option in the subsequent selects
+    var allSelects = document.querySelectorAll('select');
+    allSelects.forEach(function (select) {
+        var options = select.querySelectorAll('option');
+        options.forEach(function (option) {
+            option.disabled = false;
+            if (option.value === selectedValue) {
+                option.disabled = true;
+            }
+        });
+    });
 
     // Hide the current label and select with slide-down effect
     selectElement.classList.add('hidden');
@@ -17,20 +28,11 @@ function updateOptions(selectElement) {
         // Populate options based on selection from option 1
         populateOptions(nextSelect, selectedValue);
     }
-
-    // Disable the selected option in the subsequent selects
-    var allSelects = document.querySelectorAll('select');
-    allSelects.forEach(function (select) {
-        var optionToRemove = select.querySelector('option[value="' + selectedValue + '"]');
-        if (optionToRemove) {
-            optionToRemove.remove();
-        }
-    });
 }
 
 function populateOptions(selectElement, selectedValue) {
     // Remove existing options
-    selectElement.innerHTML = '<option value="">Select Subject</option>';
+    selectElement.innerHTML = '<option value="" disabled selected>Select Subject</option>';
 
     // Add new options based on selectedValue
     for (var i = 1; i <= 10; i++) {

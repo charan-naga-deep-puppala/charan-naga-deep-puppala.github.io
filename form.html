@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Elective Selection</title>
     <link rel="stylesheet" href="form.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,7 +19,7 @@
         <!-- Option 1 -->
         <label for="option1">Option 1:</label>
         <select id="option1" onchange="updateOptions(this)">
-            <option value="">Select Subject</option>
+            <option value="" disabled selected>Select Subject</option>
             <option value="subject1">Subject 1</option>
             <option value="subject2">Subject 2</option>
             <option value="subject3">Subject 3</option>
@@ -26,69 +31,67 @@
             <option value="subject9">Subject 9</option>
             <option value="subject10">Subject 10</option>
         </select>
-
-        <!-- Option 2 -->
-        <label for="option2" class="hidden">Option 2:</label>
-        <select id="option2" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
+        <br>
+        <!-- Options 2 to 10 -->
+        <!-- No need to hide initially -->
+        <label for="option2">Option 2:</label>
+        <select id="option2" onchange="updateOptions(this)">
+            <option value="" disabled selected>Select Subject</option>
             <!-- Options will be dynamically added here based on selection from option 1 -->
         </select>
 
-        <!-- Option 3 -->
-        <label for="option3" class="hidden">Option 3:</label>
-        <select id="option3" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
+      <br>
+      <label for="option3">Option 2:</label>
+      <select id="option3" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
+      <br>
+      <label for="option4">Option 2:</label>
+      <select id="option4" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
+      <br>
+      <label for="option5">Option 2:</label>
+      <select id="option5" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
+      <br>
+      <label for="option6">Option 2:</label>
+      <select id="option6" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
+      <br>
+      <label for="option7">Option 2:</label>
+      <select id="option7" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
+      <br>
+      <label for="option8">Option 2:</label>
+      <select id="option8" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
+      <br>
+      <label for="option9">Option 2:</label>
+      <select id="option9" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
+      <br>
+      <label for="option10">Option 2:</label>
+      <select id="option10" onchange="updateOptions(this)">
+          <option value="" disabled selected>Select Subject</option>
+          <!-- Options will be dynamically added here based on selection from option 1 -->
+      </select>
 
-        <!-- Option 4 -->
-        <label for="option4" class="hidden">Option 4:</label>
-        <select id="option4" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
 
-        <!-- Option 5 -->
-        <label for="option5" class="hidden">Option 5:</label>
-        <select id="option5" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
 
-        <!-- Option 6 -->
-        <label for="option6" class="hidden">Option 6:</label>
-        <select id="option6" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
-
-        <!-- Option 7 -->
-        <label for="option7" class="hidden">Option 7:</label>
-        <select id="option7" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
-
-        <!-- Option 8 -->
-        <label for="option8" class="hidden">Option 8:</label>
-        <select id="option8" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
-
-        <!-- Option 9 -->
-        <label for="option9" class="hidden">Option 9:</label>
-        <select id="option9" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
-
-        <!-- Option 10 -->
-        <label for="option10" class="hidden">Option 10:</label>
-        <select id="option10" onchange="updateOptions(this)" class="hidden">
-            <option value="">Select Subject</option>
-            <!-- Options will be dynamically added here based on selection from option 1 -->
-        </select>
+        <!-- Add similar blocks for options 3 to 10 -->
 
         <input type="submit" value="Submit">
     </form>
