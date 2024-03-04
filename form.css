@@ -7,6 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: url('https://source.unsplash.com/random')
 }
 
 .container {
@@ -55,18 +56,12 @@ label {
     border-color: #3498db;
 }
 
+/* Hidden class modified */
 .hidden {
-    display: none;
+    display: none !important;  /* Use !important to ensure it overrides other styles */
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
-}
-
-.visible {
-    display: block;
-    opacity: 1;
-    max-height: 1000px;
     transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
